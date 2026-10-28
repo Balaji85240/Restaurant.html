@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive Indian restaurant menu page.">
+  <title> Tamilan Restaurant</title>
+
+  
+  
+  
+  <style type="text/css">@font-face {font-family:'DM Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/dm-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'DM Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/dm-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'DM Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/dm-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'DM Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/dm-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'DM Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/dm-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'DM Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/dm-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'DM Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/dm-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'DM Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/dm-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Yatra One';font-style:normal;font-weight:400;src:url(/cf-fonts/s/yatra-one/5.2.8/devanagari/400/normal.woff2);unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+20F0,U+25CC,U+A830-A839,U+A8E0-A8FF,U+11B00-11B09;font-display:swap;}@font-face {font-family:'Yatra One';font-style:normal;font-weight:400;src:url(/cf-fonts/s/yatra-one/5.2.8/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Yatra One';font-style:normal;font-weight:400;src:url(/cf-fonts/s/yatra-one/5.2.8/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+
+  <style>
+  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 75px;
+    }
+
+    body {
+      background: #fff8e8;
+      color: #3b2115;
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    
+    header {
+      background: #8b1e1e;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 75px;
+    }
+
+    .logo {
+      color: #ffca55;
+      font-family: "Yatra One", cursive;
+      font-size: 1.8rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #ffca55;
+    }
+
+    
+    .hero {
+      display: grid;
+      min-height: 540px;
+      place-items: center;
+      background:
+        linear-gradient(rgba(45, 11, 8, 0.74), rgba(45, 11, 8, 0.74)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80") center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 70px 20px;
+    }
+
+    .hero h1 {
+      margin-bottom: 15px;
+      color: #ffca55;
+      font-family: "Yatra One", cursive;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      margin-bottom: 28px;
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 5px;
+      background: #e87514;
+      color: white;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #bd5010;
+    }
+
+    
+    main {
+      padding: 65px 0;
+    }
+
+    section {
+      margin-bottom: 65px;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section-title h2,
+    .about-text h2 {
+      color: #8b1e1e;
+      font-family: "Yatra One",cursive;
+      font-size: 2.3rem;
+    }
+
+    .section-title p,
+    .about-text p {
+      color: #6e5548;
+    }
+
+    .category-title {
+      margin: 35px 0 18px;
+      padding-left: 12px;
+      border-left: 5px solid #e87514;
+      color: #315f3b;
+      font-family: "Yatra One", cursive;
+      font-size: 1.7rem;
+    }
+
+    /* Menu cards */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid #e5cda6;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(70, 35, 20, 0.1);
+    }
+
+    .card img {
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: #8b1e1e;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      min-height: 76px;
+      color: #6e5548;
+      font-size: 0.94rem;
+    }
+
+    .price {
+      display: block;
+      margin-top: 14px;
+      color: #315f3b;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 35px;
+      padding: 35px;
+      border-radius: 12px;
+      background: #f4dfbb;
+    }
+
+    .about img {
+      height: 330px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .about-text p {
+      margin-top: 14px;
+    }
+
+    
+    .contact {
+      padding: 40px 25px;
+      border-radius: 12px;
+      background: #315f3b;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 12px;
+      color: #ffca55;
+      font-family: "Yatra One", cursive;
+      font-size: 2.1rem;
+    }
+
+    .contact p + p {
+      margin-top: 8px;
+    }
+
+    
+    footer {
+      padding: 35px 0;
+      background: #3b1712;
+      color: #f8e8ce;
+      text-align: center;
+    }
+
+    footer p + p {
+      margin-top: 8px;
+    }
+
+    
+    @media (max-width: 850px) {
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .hero {
+        min-height: 460px;
+      }
+
+      main {
+        padding: 45px 0;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card p {
+        min-height: auto;
+      }
+
+      .about {
+        padding: 22px;
+      }
+
+      .about img {
+        height: 230px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="logo" href="#home">Tamilan Restaurant</a>
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Tamilan Restaurant</h1>
+      <p>Experience traditional Indian flavours prepared with fresh ingredients, aromatic spices, and recipes filled with family memories.</p>
+      <a class="button" href="#menu">View Our Menu</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="menu">
+      <div class="section-title">
+        <h2>Our Menu</h2>
+        <p>Simple, fresh, and full of authentic Indian taste.</p>
+      </div>
+
+      <h2 class="category-title">Starters</h2>
+      <div class="menu-grid">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Samosa_with_chutney.jpg" alt="Samosa served with chutney" loading="lazy">
+          <div class="card-content">
+            <h3>Vegetable Samosa</h3>
+            <p>Crispy pastry filled with potatoes, green peas, herbs, and Indian spices.</p>
+            <span class="price">Rs. 120</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=900&q=80" alt="Paneer tikka with vegetables" loading="lazy">
+          <div class="card-content">
+            <h3>Paneer Tikka</h3>
+            <p>Marinated cottage cheese and vegetables roasted with smoky tandoori spices.</p>
+            <span class="price">Rs. 260</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Crispy Indian snack platter" loading="lazy">
+          <div class="card-content">
+            <h3>Mixed Pakora</h3>
+            <p>Seasonal vegetables dipped in spiced gram flour batter and fried until crisp.</p>
+            <span class="price">Rs. 180</span>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="category-title">Main Course</h2>
+      <div class="menu-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1678781416302-d59ed9ed46d0?auto=format&fit=crop&w=900&q=80" alt="Indian curry served in a bowl" loading="lazy">
+          <div class="card-content">
+            <h3>Butter Chicken</h3>
+            <p>Tandoori chicken cooked in a creamy tomato gravy with butter and fenugreek.</p>
+            <span class="price">Rs. 420</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=80" alt="Indian lentil curry" loading="lazy">
+          <div class="card-content">
+            <h3>Dal Tadka</h3>
+            <p>Yellow lentils tempered with cumin, garlic, onion, tomato, and red chilli.</p>
+            <span class="price">Rs. 280</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?auto=format&fit=crop&w=900&q=80" alt="Aromatic Indian biryani" loading="lazy">
+          <div class="card-content">
+            <h3>Chicken Biryani</h3>
+            <p>Fragrant basmati rice layered with chicken, saffron, herbs, and whole spices.</p>
+            <span class="price">Rs. 390</span>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="category-title">Desserts</h2>
+      <div class="menu-grid">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Gulab_jamun_1.jpg" alt="Gulab jamun Indian dessert" loading="lazy">
+          <div class="card-content">
+            <h3>Gulab Jamun</h3>
+            <p>Soft milk dumplings soaked in warm rose and cardamom sugar syrup.</p>
+            <span class="price">Rs. 140</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80" alt="Traditional Indian sweet dessert" loading="lazy">
+          <div class="card-content">
+            <h3>Rasmalai</h3>
+            <p>Soft cottage cheese patties served in chilled saffron and cardamom milk.</p>
+            <span class="price">Rs. 170</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=900&q=80" alt="Traditional frozen dessert" loading="lazy">
+          <div class="card-content">
+            <h3>Mango Kulfi</h3>
+            <p>Traditional frozen milk dessert flavoured with ripe mango and cardamom.</p>
+            <span class="price">Rs. 160</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Warm and welcoming restaurant interior" loading="lazy">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Tamilan Restrarunt began as a small family kitchen inspired by the flavours of Tamilnadu, Rajasthan, Punjab, and Hyderabad.</p>
+        <p>We prepare our food in small batches using fresh vegetables, quality ingredients, and hand-ground spices. Our aim is to serve every guest a warm meal that feels like home.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Visit Tamilan Restaurant</h2>
+      <p>vriddhachalam</p>
+      <p><strong>Phone:</strong> +918524045930</p>
+      <p><strong>Opening Hours:</strong> Monday-Sunday,10:00 AM-11:00 PM</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Tamilan Restaurant</strong></p>
+      <p>&copy; 2026 Tamilan. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
